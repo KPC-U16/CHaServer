@@ -14,7 +14,7 @@
 
 ## 2. pullReqestについて
 ### MUST
-1. 作業途中でcommitする場合はDraftで作成する
+1. 作業途中でcommitする場合はdraftで作成する
 2. 関連するissue,pullReqが存在する場合は必ずコメントにIDを記載する
 3. Reviewersを設定する(Self-Reviewしたい場合は設定しない)
 <br>
@@ -28,6 +28,7 @@
 例えば [issue] README.mdの整備#1 を作業するときは  
 ` future-README_#1 `  
 となります。
+3. featureはdevelopへmargeするまでにdevelopのすべての変更を取り込む
 <br>
 <br>
 
