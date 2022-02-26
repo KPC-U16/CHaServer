@@ -9,7 +9,7 @@ RUN echo "apt-get Update and Upgrade"
 RUN apt-get update && apt-get -y upgrade
 
 #curlインストール
-RUN apt-get -y curl
+RUN apt-get install -y curl
 
 #nodejsのインストール
 #バージョンは17.x
