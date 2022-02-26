@@ -3,8 +3,8 @@ FROM ubuntu:latest
 RUN pwd
 RUN ls -al
 
-RUN echo ${GITHUB_WORKSPACE}
-WORKDIR ${GITHUB_WORKSPACE}
+RUN cp -r ApolloServer /ApolloServer
+WORKDIR ApolloServer
 
 RUN echo "Build start..."
 # apt-get更新
