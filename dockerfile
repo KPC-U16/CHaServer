@@ -3,7 +3,11 @@ FROM ubuntu:latest
 RUN pwd
 RUN ls -al
 COPY ApolloServer /ApolloServer
+RUN pwd
+RUN ls -al
 WORKDIR ApolloServer
+RUN pwd
+RUN ls -al
 
 RUN echo "Build start..."
 # apt-get更新
