@@ -17,7 +17,7 @@ jobs:
       run: |
       
         IMAGE_NAME=`echo test_container:${GITHUB_REF#refs/heads/} | tr "[:upper:]" "[:lower:]"`
-        IMAGE_NAME= `echo ${IMAGE_NAME%%_#*}
+        IMAGE_NAME= `echo ${IMAGE_NAME%%_#*}`
         REPOSITORY=`echo ${GITHUB_REPOSITORY} | tr "[:upper:]" "[:lower:]"`
         docker build ./ --tag docker.pkg.github.com/${REPOSITORY}/${IMAGE_NAME}
         docker login docker.pkg.github.com --username ${DOCKER_USERNAME} --password ${DOCKER_PASSWORD}
