@@ -1,6 +1,8 @@
 FROM ubuntu:latest
 
 #ApolloServerへ移動
+RUN ls -al
+
 WORKDIR ApolloServer
 
 RUN pwd
