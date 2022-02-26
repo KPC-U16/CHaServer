@@ -1,11 +1,9 @@
 FROM ubuntu:latest
 
+COPY * /Server
 RUN pwd
 RUN ls -al
-COPY ApolloServer /ApolloServer
-RUN pwd
-RUN ls -al
-WORKDIR ApolloServer
+WORKDIR /Server/ApolloServer
 RUN pwd
 RUN ls -al
 
