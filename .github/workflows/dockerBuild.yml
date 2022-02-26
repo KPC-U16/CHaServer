@@ -12,6 +12,9 @@ jobs:
     
     - name: ls
       run: ls -al 
+    
+    -name: echo
+    　run: echo ${GITHUB_WORKSPACE}
       
     - name: build Dockerfile and push image # userで外部ファイル or 定義済みの処理を実行できる。ここではリポジトリのcheckout
       run: |
