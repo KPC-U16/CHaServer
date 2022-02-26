@@ -2,8 +2,7 @@ FROM ubuntu:latest
 
 RUN pwd
 RUN ls -al
-
-RUN cp -r ApolloServer /ApolloServer
+COPY ApolloServer /ApolloServer
 WORKDIR ApolloServer
 
 RUN echo "Build start..."
