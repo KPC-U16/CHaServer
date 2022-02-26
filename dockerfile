@@ -1,11 +1,8 @@
 FROM ubuntu:latest
 
+#もろもろをServerディレクトリにCOPY
 COPY / /Server
-RUN pwd
-RUN ls -al
 WORKDIR /Server/ApolloServer
-RUN pwd
-RUN ls -al
 
 RUN echo "Build start..."
 # apt-get更新
