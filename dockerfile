@@ -3,6 +3,9 @@ FROM ubuntu:latest
 RUN pwd
 RUN ls -al
 
+RUN echo ${GITHUB_WORKSPACE}
+WORKDIR ${GITHUB_WORKSPACE}
+
 RUN echo "Build start..."
 # apt-get更新
 RUN echo "apt-get Update and Upgrade"
