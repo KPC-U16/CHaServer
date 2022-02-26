@@ -1,5 +1,8 @@
 FROM ubuntu:latest
 
+#ApolloServerへ移動
+WORKDIR ApolloServer
+
 RUN echo "Build start..."
 # apt-get更新
 RUN echo "apt-get Update and Upgrade"
